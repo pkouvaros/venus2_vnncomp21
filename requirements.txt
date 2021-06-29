@@ -1,0 +1,5 @@
+numpy
+tensorflow
+onnx
+alive_progress
+sly
