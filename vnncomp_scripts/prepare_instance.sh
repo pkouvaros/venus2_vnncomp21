@@ -12,7 +12,7 @@ if [ "$1" != ${VERSION_STRING} ]; then
 	exit 1
 fi
 
-if [[ "$2" = "cifar10_resnet" || "$2" = "marabou-cifar10" || "2" = "eran" || "2" = "verivital" ]]; then
+if [[ "$2" = "cifar2020" || "$2" = "cifar10_resnet" || "$2" = "marabou-cifar10" || "$2" = "eran" || "$2" = "verivital" ]]; then
 	echo "'$2' benchmark not supported"
 	exit 1
 fi
