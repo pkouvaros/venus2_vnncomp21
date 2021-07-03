@@ -25,7 +25,7 @@ tar -xzvf gurobi9.1.2_linux64.tar.gz
 rm gurobi9.1.2_linux64.tar.gz 
 mv gurobi912 "$DIR/"
 cd "$DIR/gurobi912/linux64/"
-python3 setup.py install
+sudo python3 setup.py install
 
 #  Gurobi license: uncomment below and replace xxx with the license key.
 #cd bin
