@@ -12,6 +12,10 @@ if [ "$1" != ${VERSION_STRING} ]; then
 	exit 1
 fi
 
+export GUROBI_HOME="$DIR/gurobi912/linux64"
+export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:$DIR/gurobi912/linux64/lib"
+export PATH="${PATH}:${GUROBI_HOME}/bin"
+
 CATEGORY=$2
 ONNX_FILE=$3
 VNNLIB_FILE=$4

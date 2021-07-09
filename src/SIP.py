@@ -149,6 +149,7 @@ class SIP():
         return post_eq, mem_post_eq, post_b 
 
     def osip_eligibility(self, layer):
+        return False
         if layer.depth == len(self.layers):
             return False
         if self.params.OSIP_CONV != OSIPMode.ON:
