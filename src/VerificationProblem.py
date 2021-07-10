@@ -33,7 +33,8 @@ class VerificationProblem(object):
                 adv_labels = sip.get_adv_labels(self.spec.label)
                 self.spec.update_adv_labels(adv_labels)
             else:
-                self.spec.output_formula = sip.simplify_formula(self.spec.output_formula)
+                pass
+                # self.spec.output_formula = sip.simplify_formula(self.spec.output_formula)
             return True
         else:
             return False
