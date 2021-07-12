@@ -317,7 +317,7 @@ class Verifier:
             for proc in self.split_procs:
                 proc.terminate()
                 proc.join()
-                proc.close()
+                # proc.close()
         except:
             raise Exception("Could not terminate splitting processes.")
 
@@ -333,6 +333,6 @@ class Verifier:
             for proc in self.ver_procs:
                 proc.terminate()
                 proc.join()
-                proc.close()
+                # proc.close()
         except:
             raise Exception("Could not terminate verification processes.")
